@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales CRM Permission Registration Form</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 1170px;
+            margin: 0px auto;
+        }
+
+        .container-label {
+            width: 100%;
+            background-color: aqua;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+
+        }
+
+        .container-input {
+            width: 1170px;
+            margin: 0px auto;
+            background-color: aqua;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+
+        }
+
+        .flex-item {
+            width: 12.2%;
+            background-color: greenyellow;
+            box-sizing: border-box;
+            margin: 0.1% 0.1%;
+            text-align: center;
+        }
+
+        .input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .registration {
+            width: 20%;
+            margin-top: 20px;
+            margin-left: 40%;
+        }
+        .margin-bottom-10 {
+            margin-bottom: 10px;
+        }
+    </style>
+    <div id="wrapper">
+        <form action="registration.php" method="POST">
+            <h1 class="text-center">Sales CRM Permission Registration Form</h1>
+            <h2 class="margin-bottom-10">Trường hợp cấp quyền mới</h2>
+            <div class="container-label">
+                <div class="flex-item item-1"><label for="fullname">Họ lót và tên</label></div>
+                <div class="flex-item item-2"><label for="userad">User AD</label></div>
+                <div class="flex-item item-3"><label for="staff_code">Mã NV</label></div>
+                <div class="flex-item item-4"><label for="perdna">Per DNA</label></div>
+                <div class="flex-item item-5"><label for="idcard">CMND/CCCD</label></div>
+                <div class="flex-item item-6"><label for="phone_number">Số điện thoại</label></div>
+                <div class="flex-item item-7"><label for="title">Chức danh</label></div>
+                <div class="flex-item item-8"><label for="perdna_management">Per DNA cấp quản lý</label></div>
+            </div>
+            <div class="container-input">
+                <div class="flex-item item-1"><input class="input" type="text" id="fullname" name="fullname" /></div>
+                <div class="flex-item item-2"><input class="input" type="text" id="userad" name="userad" /></div>
+                <div class="flex-item item-3"><input class="input" type="text" id="staff_code" name="staff_code" /></div>
+                <div class="flex-item item-4"><input class="input" type="text" id="perdna" name="perdna" /></div>
+                <div class="flex-item item-5"><input class="input" type="text" id="idcard" name="idcard" /></div>
+                <div class="flex-item item-6"><input class="input" type="text" id="phone_number" name="phone_number" /></div>
+                <div class="flex-item item-7"><input class="input" type="text" id="title" name="title" /></div>
+                <div class="flex-item item-8"><input class="input" type="text" id="perdna_management" name="perdna_management" /></div>
+            </div>
+            <input class="registration" type="submit" value="Đăng ký">
+        </form>
+    </div>
+</body>
+
+</html>
